@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,9 +24,30 @@
     />
 
     <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="min-h-screen max-w-md bg-gray-200 mx-auto">
-    
+  <body class="min-h-screen max-w-md bg-[#F4F5F7] mx-auto">
+    <div class="logo w-[200px] mx-auto pt-32">
+      <img src="./assets/logo-full.png" alt="" />
+    </div>
+    <div class="login-form pt-10">
+      <div class="card bg-base-100 w-full max-w-sm shadow mx-auto rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Mobile Number</label>
+            <input type="text" maxlength="11" minlength="11" class="input rounded-full bg-[#F4F5F7]" placeholder="Enter 11 digit number" /> <br>
+            <label class="label text-neutral font-bold">4 Digit Pin</label>
+            <input maxlength="4" type="password" class="input rounded-full bg-[#F4F5F7]" placeholder="Enter 4 Digit Pin" />
+            <button class="btn btn-primary mt-4 rounded-full">Login</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
